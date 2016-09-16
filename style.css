@@ -1,17 +1,19 @@
+body{
+  background-color: #F7DC6F;
+}
+
 p {
   font-size: 16px;
-  color: #F7DC6F;
+  color: #FEF9E7;
   font-family: "Times New Roman", Arial, sans-serif;
   font-weight: normal;
   padding-left: 5px;
-
 }
-
-
 
 h1 {
     color: #C0392B;
     font-family: "Times New Roman", Georgia, serif;
+    text-align: center;
     padding-left: 5px;
     padding-top: 20px;
 
@@ -20,20 +22,17 @@ h1 {
 h2 {
   color: #E74C3C;
   font-family: "Times New Roman", Georgia, serif;
+  text-align: center;
   padding-left: 5px;
   font-size: 16px;
   font-weight: normal;
 }
 
 
-body{
-  background-color: #F7DC6F;
-}
-
 #container{
     width: 90%;
-    height:100%;
     background-color: #FEF9E7;
+    text-align: center;
     margin: 0 auto;
     padding-top: 0;
 }
@@ -52,7 +51,7 @@ body{
 
 #nav a:link, a:visited {
 	  display:block;
-    color: #F7DC6F;
+    color: #FEF9E7;
     background-color: #C0392B;
     font-weight: bold;
     text-align:center;
@@ -65,9 +64,28 @@ body{
   background-color: #7a991a;
 }
 
+#nav {
+    padding: 0;
+    width:90%;
+    margin-right:5%;
+    margin-left: 5%;
+}
 
 img {
   border-style: none;
-  border-color: transparent;
-  padding-left: 5px;
+  margin-bottom: 2%
+}
+
+img.displayed {
+    display: block;
+
+}
+
+
+#container1{
+  width: 90%;
+  background-color: #C0392B;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1px;
 }
