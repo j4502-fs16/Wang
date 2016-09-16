@@ -45,9 +45,9 @@ body{
 #nav li {
     list-style-type: none;
     float: left;
-    margin: 5px;
     padding: 0;
-    width: 24%;
+    width: 25%;
+    height: 10%;
 }
 
 #nav a:link, a:visited {
