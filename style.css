@@ -1,3 +1,9 @@
+html {
+  font-size: 100%
+}
+
+
+
 body{
   background-color: #F7DC6F;
 }
@@ -5,29 +11,41 @@ body{
 p {
   font-size: 16px;
   color: #FEF9E7;
-  font-family: "Times New Roman", Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
   font-weight: normal;
   padding-left: 5px;
 }
 
 h1 {
     color: #C0392B;
-    font-family: "Times New Roman", Georgia, serif;
+    font-family: "Amatic SC", "Times New Roman", Georgia;
+    font-size:80px;
     text-align: center;
     padding-left: 5px;
-    padding-top: 20px;
+    padding-top: 50px;
+    line-height: 10px;
 
 }
 
-h2 {
+.p1 {
   color: #E74C3C;
-  font-family: "Times New Roman", Georgia, serif;
+  font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
+  font-style: italic;
   text-align: center;
   padding-left: 5px;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: normal;
+  line-height: 3px;
 }
 
+.p2 {
+  font-size: 16px;
+  color: #FEF9E7;
+  font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 5px;
+}
 
 #container{
     width: 90%;
@@ -46,18 +64,20 @@ h2 {
     float: left;
     padding: 0;
     width: 25%;
-    height: 10%;
+    height: 20%;
 }
 
 #nav a:link, a:visited {
 	  display:block;
     color: #FEF9E7;
     background-color: #C0392B;
-    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
+    font-weight: lighter;
+    font-size: 23px;
     text-align:center;
     text-decoration: none;
-    padding: 5px;
-    font-family: "Times New Roman", Arial, sans-serif;
+    padding: 10px;
+
 }
 
 #nav a:hover, a:active {
@@ -115,14 +135,15 @@ a:hover, a:active img{
 }
 
 #nav2 a:link, a:visited {
-	  display:block;
+    display:block;
     color: #FEF9E7;
     background-color: #C0392B;
-    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
+    font-weight: lighter;
+    font-size: 18px;
     text-align:center;
     text-decoration: none;
-    padding: 5px;
-    font-family: "Times New Roman", Arial, sans-serif;
+    padding: 10px;
 }
 
 #nav2 a:hover, a:active {
