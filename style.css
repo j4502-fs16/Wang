@@ -3,68 +3,40 @@ html {
 }
 
 
-
 body{
-  background-color: #F7DC6F;
+
+  background-color: #FEF9E7;
 }
 
 p {
   font-size: 16px;
-  color: #FEF9E7;
+  color: #726B70;
   font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
   font-weight: normal;
-  padding-left: 5px;
 }
 
 h1 {
     color: #C0392B;
     font-family: "Amatic SC", "Times New Roman", Georgia;
-    font-size:80px;
-    text-align: center;
+    font-size:50px;
     padding-left: 5px;
-    padding-top: 50px;
     line-height: 10px;
-
-}
-
-.p1 {
-  color: #E74C3C;
-  font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
-  font-style: italic;
-  text-align: center;
-  padding-left: 5px;
-  font-size: 25px;
-  font-weight: normal;
-  line-height: 3px;
-}
-
-.p2 {
-  font-size: 16px;
-  color: #FEF9E7;
-  font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
-  font-style: italic;
-  font-weight: normal;
-  padding-left: 5px;
-}
-
-#container{
-    width: 90%;
-    background-color: #FEF9E7;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 0;
+    margin-left: 5%;
 }
 
 #nav {
     padding: 0;
+    margin-right:5%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: column;
+
 }
 
 #nav li {
     list-style-type: none;
-    float: left;
     padding: 0;
-    width: 25%;
-    height: 20%;
+
 }
 
 #nav a:link, a:visited {
@@ -76,25 +48,17 @@ h1 {
     font-size: 23px;
     text-align:center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
 
 }
 
 #nav a:hover, a:active {
-  background-color: #7a991a;
+  background-color: #C0392B;
 }
 
-#nav {
-    padding: 0;
-    width:90%;
-    margin-right:5%;
-    margin-left: 5%;
-}
-
-img {
-  border-style: none;
-  margin-bottom: 2%
-}
+ img {
+   margin-right: 10px;
+ }
 
 img.displayed {
     display: block;
@@ -102,50 +66,140 @@ img.displayed {
 
 a:hover, a:active img{
  opacity: 0.7;
- background-color: transparent;
+ background: transparent;
 }
 
-#container1{
+.wrapper1{
+  display: flex;
+  flex-flow: row wrap;
   width: 90%;
-  background-color: #2D4074;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  margin: 10px;
+  padding: 10px;
 }
 
-#container1 a:link, a:visited {
-  color:#FEF9E7;
-  text-decoration: none;
+.wrapper2{
+  display: flex;
+  flex-flow: column;
+  margin-right:5%;
+  margin-left: 5%;
+  font-weight: normal;
+  padding:8px;
 }
 
-#nav2 {
-    padding: 0;
-    width:90%;
-    margin-right:5%;
-    margin-left: 5%;
-}
-
-
-#nav2 li {
-    list-style-type: none;
-    float: left;
-    width: 33.3%;
-    height: 10%;
-}
-
-#nav2 a:link, a:visited {
-    display:block;
-    color: #FEF9E7;
-    background-color: #C0392B;
-    font-family: 'Slabo 27px', serif, "Times New Roman";
+.wrapper2 a:link, a:visited {
+	  display:block;
+    font-family: 'Open Sans Condensed', sans-serif, "Times New Roman";
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 20px;
     text-align:center;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.aside1, .aside2, .aside3, .aside4 {
+  color: #FEF9E7;
+  background:#CCC0B1;
+  margin: 5px;
 }
 
-#nav2 a:hover, a:active {
-  background-color: #7a991a;
+@media (min-width: 800px){
+
+.wrapper1 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+#nav {
+      flex-flow: row;
+      justify-content: flex-end;
+      margin-left: auto;
+}
+
+#header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+}
+
+#nav{
+  flex: 1 30%;
+  order: 2;
+}
+
+h1{
+  flex: 1 30%;
+  order: 1;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-flow:row wrap;
+  text-align:center;
+  padding-top: 10px;
+}
+
+.wrapper2 a:link  {
+  margin-top: 15%;
+  font-size: 40px;
+
+}
+    .aside {
+      flex: 1 auto;;
+
+    }
+    .main {
+      flex: 1 50%;
+      text-align: left;
+      flex-flow: row;
+      padding: 10px;
+      margin:10px;
+
+    }
+
+    img {
+      margin-left: 30px;
+      height: 100%;
+    }
+    .aside1,.aside2,.aside3,.aside4{
+      flex:1 40%;
+      width:200px;
+      height: 200px;
+	    margin: 5px;
+    }
+
+    .aside1{
+      order:1
+    }
+    .aside2{
+      order: 2;
+
+    }
+    .aside3{
+
+      order: 3;
+
+    }
+    .aside4{
+
+      order: 4;
+
+    }
+    .main {
+      display: flex;
+      flex-flow: row;
+    }
+
+    .main a {
+      margin-right: 50px;
+    }
+
+    .nav a {
+      border: none;
+    }
 }
