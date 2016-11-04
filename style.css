@@ -4,7 +4,6 @@ html {
 
 
 body{
-
   background-color: #FEF9E7;
 }
 
@@ -15,6 +14,10 @@ p {
   font-weight: normal;
 }
 
+.p2 {
+  order:3
+}
+
 h1 {
     color: #C0392B;
     font-family: "Amatic SC", "Times New Roman", Georgia;
@@ -22,6 +25,7 @@ h1 {
     padding-left: 5px;
     line-height: 10px;
     margin-left: 5%;
+    text-align: center;
 }
 
 #nav {
@@ -56,12 +60,14 @@ h1 {
   background-color: #C0392B;
 }
 
- img {
-   margin-right: 10px;
- }
 
 img.displayed {
     display: block;
+}
+
+.photo2 {
+  height:450px;
+  width:450px;
 }
 
 a:hover, a:active img{
@@ -69,10 +75,11 @@ a:hover, a:active img{
  background: transparent;
 }
 
+
+
 .wrapper1{
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -84,7 +91,9 @@ a:hover, a:active img{
   margin-right:5%;
   margin-left: 5%;
   font-weight: normal;
-  padding:8px;
+  padding:10px;
+  padding-bottom: 20px;
+
 }
 
 .wrapper2 a:link, a:visited {
@@ -103,15 +112,26 @@ a:hover, a:active img{
   margin: 5px;
 }
 
+.wrapper3 {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  padding:10px;
+  padding-top: 20px;
+  border-top: 10px solid #C0392B;
+}
+
+
 @media (min-width: 800px){
 
 .wrapper1 {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 80%;
   text-align: center;
-  margin: 10px;
   padding: 10px;
+  margin-left:5%;
+  margin-right: 5%;
 }
 
 
@@ -119,12 +139,15 @@ a:hover, a:active img{
       flex-flow: row;
       justify-content: flex-end;
       margin-left: auto;
+      background-color: #FEF9E7;
 }
 
 #header {
   display: flex;
   flex-flow: row nowrap;
   justify-content:space-between;
+  border-bottom-color: black;
+  text-align: left;
 }
 
 #nav{
@@ -133,8 +156,8 @@ a:hover, a:active img{
 }
 
 h1{
-  flex: 1 30%;
-  order: 1;
+padding-left: 50px;
+order: 1;
 }
 
 .wrapper2 {
@@ -142,6 +165,7 @@ h1{
   flex-flow:row wrap;
   text-align:center;
   padding-top: 10px;
+
 }
 
 .wrapper2 a:link  {
@@ -158,14 +182,16 @@ h1{
       text-align: left;
       flex-flow: row;
       padding: 10px;
-      margin:10px;
+
 
     }
 
     img {
       margin-left: 30px;
-      height: 100%;
+      margin-right: 30px;
     }
+
+
     .aside1,.aside2,.aside3,.aside4{
       flex:1 40%;
       width:200px;
@@ -202,4 +228,34 @@ h1{
     .nav a {
       border: none;
     }
+
+
+.wrapper3 {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 30%;
+  margin-left: 5%;
+  margin-right:5%;
+  padding-top: 10px;
+}
+
+.p1, .p2, .photo2 {
+  flex: 1 30%;
+}
+
+.photo2 {
+  order: 2;
+  width: 400px;
+  height: 400px;
+}
+
+.p1 {
+  order:1;
+}
+.p2 {
+  order:3;
+}
+
+
+
 }
