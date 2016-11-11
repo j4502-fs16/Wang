@@ -21,14 +21,13 @@ p {
 h1 {
     color: #C0392B;
     font-family: "Amatic SC", "Times New Roman", Georgia;
-    font-size:50px;
-    padding-left: 5px;
+    font-size:40px;
+    padding: 5px;
     line-height: 10px;
-    margin-left: 5%;
-    text-align: center;
+    margin: 5%;
 }
 
-#nav {
+nav {
     padding: 0;
     margin-right:5%;
     margin-left: 5%;
@@ -37,29 +36,40 @@ h1 {
 
 }
 
-#nav li {
+nav li {
     list-style-type: none;
     padding: 0;
 
 }
 
-#nav a:link, a:visited {
+nav a:link, a:visited {
 	  display:block;
-    color: #FEF9E7;
-    background-color: #C0392B;
+    color: #C0392B;
     font-family: 'Slabo 27px', serif, "Times New Roman";
     font-weight: lighter;
     font-size: 23px;
-    text-align:center;
+    text-align:left;
     text-decoration: none;
     padding: 5px;
+    width: 100px;
 
 }
 
-#nav a:hover, a:active {
-  background-color: #C0392B;
+ul a:hover, a:active {
+  background-color: #c0ae2b;
 }
 
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 1em;
+
+}
+
+ul {
+  display: none;
+  order: 2;
+}
 
 img.displayed {
     display: block;
@@ -78,8 +88,6 @@ a:hover, a:active img{
 
 
 .wrapper1{
-  display: flex;
-  flex-flow: row wrap;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -124,6 +132,10 @@ a:hover, a:active img{
 
 @media (min-width: 800px){
 
+.menu-trigger {
+      display: none;
+  }
+
 .wrapper1 {
   display: flex;
   flex-flow: row wrap;
@@ -135,7 +147,7 @@ a:hover, a:active img{
 }
 
 
-#nav {
+ul {
       flex-flow: row;
       justify-content: flex-end;
       margin-left: auto;
@@ -150,7 +162,7 @@ a:hover, a:active img{
   text-align: left;
 }
 
-#nav{
+ul{
   flex: 1 30%;
   order: 2;
 }
@@ -182,8 +194,6 @@ order: 1;
       text-align: left;
       flex-flow: row;
       padding: 10px;
-
-
     }
 
     img {
@@ -258,7 +268,10 @@ order: 1;
 
 }
 
+
+
 @media (max-width: 600px){
+
 
 .photo1 {
   display: none;
